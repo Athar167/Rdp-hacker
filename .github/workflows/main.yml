@@ -65,4 +65,10 @@ jobs:
           鈴� Waiting for GoFile link...
           " -ForegroundColor Cyan
           
-    
+      - name: Start Avica Service
+        run: cmd /c show.bat
+        
+      - name: Keep Session Active
+        run: |
+          Write-Host "馃殌 Avica is starting... Look for CONNECTION ID below!" -ForegroundColor Yellow
+          cmd /c loop.bat
